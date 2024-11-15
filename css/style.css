@@ -294,7 +294,6 @@ input.toggler:checked ~ .menu {
   .toggle{
     z-index: 2;
   }
-
 .top-menu-container{
   display: none;
 }
