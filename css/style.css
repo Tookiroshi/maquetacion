@@ -91,7 +91,12 @@ body {
     position: fixed;
     width: 100%;
     list-style-type: none;
+    display: block;
   }
+  .menu-container {
+    display: none;
+    position: relative;
+}
   #top-menu a{
     color: #fff;
   }
@@ -120,31 +125,31 @@ body {
     color: #ffdc19;
   }
   /* menu brgr ------------------------- */
-  #menu-brgr {
+  .menu {
+    z-index: 1;
     display: none;
-    background-color: #333;
-    padding: 20px;
     position: absolute;
-    top: 50px;
+    top: 0;
     right: 0;
-    width: 200px;
+    background-color: #85858565;
+    border: 1px solid #ccc;
+    padding: 50%;
 }
- #menu-toggle .hamburger{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    width: 300px;
-    height: 300px;
-  }
-  #menu-toggle .hamburger div{
-    background: #333;
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+  z-index: 1;
+    margin: 50% 0;
+    font-size: 2rem;
+    text-align: center;
+}
+/* When checkbox toggled, show menu */
+input.toggler:checked ~ .menu {
     display: block;
-    height: 3px;
-    margin: 5px 0;
-    transition: 0.3s;
-  }
-  #menu-toggle{
-  display: none;
 }
   /* showcase */
   #showcase {
@@ -277,9 +282,6 @@ body {
       line-height: 50px;
       gap: 10px;
     }
-  .toggle{
-    display: none;
-  }
     #contact {
       line-height: 50px;
       font-size: 40px;
@@ -289,27 +291,16 @@ body {
     }
     
   /* btn hamburgr-------------- */
-  #top-menu{
-    display: none;
+  .toggle{
+    z-index: 2;
   }
-  .menu-toggle{
-    display: inline-block;
+
+.top-menu-container{
+  display: none;
+}
+.menu-container {
+    display: block;
+    z-index: 2;
+}
+
   }
-#menu-brgr{
-  color: #333;
-  display: block;
-  flex: 1;
-  position: relative;
-  }
-  .top-menu-container {
-    display: none;
-}
-#menu-toggle{
-  position: absolute;
-  display: inline-block;
- list-style: none;
- flex: 1;
- margin: 0;
- padding: 0;
-}
-}

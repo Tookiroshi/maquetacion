@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/CSS/style.css" />
   </head>
   <body>
-    <header>
+   
       <nav id="top-menu">
         <div class="container top-menu-container">
           <ul>
@@ -32,27 +32,29 @@
             <li><a href="#">QnA</a></li>
           </ul>
         </div>
-
-        
-        <!-- menu hmbrgr -->
-         <!-- boton -->
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
-        </label>
-        <div id="menu-brgr">
-          <div class="top-brgr">
-            <ul>
-              <li><a href="#">Contacto</a></li>
-              <li><a href="#">Nosotros</a></li>
-              <li><a href="#">QnA</a></li>
-            </ul>
+       
+        <div class="menu-container">
+          <!-- Hamburger Button -->
+          <input type="checkbox" class="toggler" id="menu-toggle">
+          <div class="hamburger">
+              <div class="menu-toggler">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </div>
           </div>
-        </div>
+          <!-- Hamburger Menu -->
+          <div class="menu">
+              <ul>
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#">Sobre Nosotros</a></li>
+                  <li><a href="#">Servicios</a></li>
+                  <li><a href="#">Contacto</a></li>
+              </ul>
+          </div>
+      </div>
       </nav>
-
+ <header>
       <div id="showcase">
         <div class="container showcase-container">
           <h2><strong class="text-primary">Morrokes</strong> Arpg</h2>
